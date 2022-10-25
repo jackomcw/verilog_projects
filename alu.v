@@ -7,7 +7,7 @@ module alu(A, B, sel, out);
 
     reg [31:0] temp; 
 
-    always @ (*) begin
+    always @(*) begin
         case (sel)
             3'b000 : out = A & B;
             3'b001 : out = A | B;
